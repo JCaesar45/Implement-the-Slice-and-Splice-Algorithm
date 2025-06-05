@@ -1,0 +1,16 @@
+** start of script.js **
+
+function frankenSplice(arr1, arr2, n) {
+  // Create a copy of arr2 to avoid modifying the original
+  let result = arr2.slice();
+
+  // Use splice to insert arr1 into the copied array at index n
+  result.splice(n, 0, ...arr1);
+
+  // Return the new array
+  return result;
+}
+
+
+** end of script.js **
+
